@@ -1,0 +1,125 @@
+/*Style guide fonts*/
+@font-face {
+    font-family: "Fraunces";
+    src: url(./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+/*Disables desktop and mobile image for @media CSS rule*/
+.desktop, .mobile {
+    display: none;
+    max-width: 100%;
+}
+/*Cart button CSS rules*/
+.cart{
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    border-radius: .5em;
+    padding: .1em;
+    text-align: center;
+}
+
+.cart img{
+    margin-right: .5em;
+}
+.cart:hover{
+    background-color: hsl(158, 36%, 20%);
+}
+.cart a:link, .cart a:visited{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+/*Mobile layout*/
+@media (max-width: 376px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile{
+        display: block;
+        border-radius: 1em 1em 0em 0em;
+    }
+    .desktop {
+        display: none;
+    }
+    .container{
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0em 0em 1em 1em;
+    }
+    .description{
+        margin: 1em;
+    }
+}
+/*Desktop layout*/
+@media (min-width: 376px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 600px;
+        height: 450px;
+    }
+    .desktop{
+        display: block;
+        border-radius: 1em 0em 0em 1em;
+        width: 50%;
+        height: auto;
+    }
+    .mobile{
+        display: none;
+    }
+    .container{
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0em 1em 1em 0em;
+        width: 50%;
+        height: auto;
+    }
+    .description{
+        margin: 1.5em;
+    }
+}
+/*Font rules*/
+h1{
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+
+p{
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+}
+/*Creates space between each letter of perfume*/
+.category{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+/*Prices are aligned vertically and spaced apart using margin*/
+.price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.price h1{
+    color: hsl(158, 36%, 37%);
+    margin-right: 1em;
+}
