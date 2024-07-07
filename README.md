@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-using-media-and-flexbox-i_RY_6UdEr](https://www.frontendmentor.io/solutions/product-preview-card-component-using-media-and-flexbox-i_RY_6UdEr)
 - Live Site URL: [https://ryan-ohanlon.github.io/product-preview-card-component-main/](https://ryan-ohanlon.github.io/product-preview-card-component-main/)
 
 ## My process
